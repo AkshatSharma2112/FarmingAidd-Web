@@ -1,0 +1,186 @@
+body {
+    background-color: #e0f7fa;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #00796b;
+    margin: 50px;
+    text-align: center;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    
+}
+.leftcard{
+    width: 50%;
+    margin: 80px 50px;
+    margin-left: 15vw;
+}
+.rightcard img{
+    max-width: 80%;
+    max-height: 100%;
+  border-radius: 10px;
+}
+
+
+.leftcard form {
+    background: #ffffff;
+    width: 500px;
+    height: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+}
+
+.leftcard label {
+    font-size: 1.2em;
+    color: #00796b;
+    display: block;
+    margin-bottom: 0px;
+}
+.leftcard select, input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.area input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.leftcard button {
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5vw;
+}
+
+.leftcard button:hover {
+    background-color: #004d40;
+}
+
+.leftcard button:active {
+    background-color: #00251a;
+}
+.results {
+    text-align: center; 
+    justify-content: center;
+    width: 70vw;
+    background-color: #e0f7fa; /* Light blue background */
+    border: 1px solid #00796b; /* Teal border */
+    padding: 10px 50px ; /* Padding for spacing */
+    margin-top: 100px;
+    margin-left: 15vw; /* Space above the results */
+    border-radius: 40px; /* Rounded corners */
+    font-family: Arial, sans-serif; /* Font style */
+    color: #004d40; /* Dark teal text */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Styling for the result heading */
+.results h2 {
+    font-size: 22px; /* Larger font */
+    color: #00796b; /* Deep teal */
+    margin-bottom: 10px; /* Space below heading */
+    text-align: center; /* Centered text */
+}
+
+/* Styling for the result content */
+.results p {
+    font-size: 16px; /* Standard font size */
+    line-height: 1.6; /* Better readability */
+    margin: 8px 0; /* Space between paragraphs */
+}
+
+/* Additional styling for emphasis */
+.results strong {
+    color: #004d40; /* Darker teal */
+    font-weight: bold;
+}
+
+/* Styling for additional info */
+.additional-info {
+    font-size: 14px;
+    color: #00796b;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.dark .main h1{
+    color: #fff;
+}
+.dark .main label{
+    color: black
+}
+.dark .main input{
+    background: white;
+    color: black;
+}
+
+
+/* 🔄 Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+  
+    .leftcard,
+    .rightcard {
+      width: 100%;
+      margin: 20px auto;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    .results {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .leftcard form {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    .leftcard label {
+      font-size: 1em;
+    }
+  
+    .leftcard button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .results h2 {
+      font-size: 1.2em;
+    }
+  
+    .results p {
+      font-size: 0.95em;
+    }
+  }

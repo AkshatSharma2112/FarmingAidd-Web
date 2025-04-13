@@ -1,0 +1,162 @@
+/* Navbar.css */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Align items to the ends */
+    align-items: center; /* Center items vertically */
+    background: #fff; /* Example background*/
+    padding:15px 7px;
+}
+
+.logo{
+    width: 100px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    
+}
+
+ul li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: inherit; 
+}
+
+.toggleicon{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.searchbox{
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    height: 50px;
+    padding: 1px 20px;
+    border-radius: 50px;
+}
+
+.searchbox input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding-top: 25px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.searchbox input::placeholder{
+    color: #fff;
+    text-align: left;
+}
+
+.searchbox img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.dark .navbar{
+    background-color: #000;
+    color: #fff;
+}
+
+.dark .searchbox{
+    background: #fff;
+}
+
+.dark .searchbox input{
+    color: #222;
+}
+
+.dark .searchbox input::placeholder{
+    color: #222;
+}
+
+.dark .navbar ul li{
+    color: #fff;
+}
+
+
+
+/* ======= Tablet & Phone Responsive Styles ======= */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggleicon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    ul {
+        width: 100%;
+        display: none; /* hidden by default */
+        flex-direction: column;
+        text-align: left;
+        padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    ul.show {
+        display: flex;
+    }
+
+    ul li {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .searchbox {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+
+    .dark ul {
+        background-color: #000;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+    }
+
+    ul li {
+        font-size: 15px;
+    }
+
+    .searchbox input {
+        font-size: 14px;
+        padding-top: 30px;
+    }
+
+    .searchbox {
+        padding: 1px 15px;
+    }
+
+    .toggleicon {
+        width: 25px;
+    }
+}
