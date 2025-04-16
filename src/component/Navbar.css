@@ -93,7 +93,7 @@ ul li a{
 
 
 
-/* ======= Tablet & Phone Responsive Styles ======= */
+/* ======= Tablet & Phone Responsive Styles =======
 @media (max-width: 1024px) {
     .navbar {
         flex-direction: column;
@@ -110,14 +110,14 @@ ul li a{
     ul {
         width: 100%;
         display: none; /* hidden by default */
-        flex-direction: column;
+        /* flex-direction: column;
         text-align: left;
         padding: 10px 20px;
         background-color: #fff;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
+    } */
 
-    ul.show {
+    /* ul.show {
         display: flex;
     }
 
@@ -159,4 +159,4 @@ ul li a{
     .toggleicon {
         width: 25px;
     }
-}
+} */ 

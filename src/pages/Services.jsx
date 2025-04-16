@@ -4,7 +4,7 @@ import CropInfo from '../component/CropInfo'
 
 const Services= () => {
   return (
-    <div className='services'>
+    <div>
       
       <CropInfo/>
     </div>

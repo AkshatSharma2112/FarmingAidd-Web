@@ -1,13 +1,16 @@
 import React from 'react'
-import CropInfo from '../component/CropInfo'
+import Hero from '../component/hero'; 
+import Solution from '../component/Solution';
+import Footer from '../component/Footer';
 
-const Service = () => {
+const Home = () => {
   return (
     <div>
-      <div>
-      </div>
+      <Hero/>
+      <Solution/>
+      <Footer/>
     </div>
   )
 }
 
-export default Service
+export default Home

@@ -63,7 +63,6 @@ const cropData = [
     name: "Vegetables",
     soil: "Well-drained Soil",
     waterSupply: 400,
-    waterSupply: 400,
     extraDetails: `Vegetables need consistent watering based on type and growth stage.
     Well-drained soil with high fertility is optimal.
     Water supply ranges from 400-600 mm per acre, with irrigation every 5-7 days.`,
