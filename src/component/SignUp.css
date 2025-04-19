@@ -1,0 +1,48 @@
+.sign-up-section{
+    width: 400px;
+    margin-left: 40vw;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  background-color: #1c7302;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.sign-up-section h1{
+    font-size: 2rem;
+    color: wheat;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-up-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+}
+.sign-up-section input{
+    width: 100%;
+    padding:4px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #333;
+}
+.email{
+    width: 100%;
+    padding:4px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #333;
+}
