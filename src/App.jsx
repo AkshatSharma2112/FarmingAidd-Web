@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import CropInfo from "./component/CropInfo.jsx";
 import Navbar from "./component/Navbar.jsx";
 import Services from "./pages/Services.jsx";
@@ -17,7 +17,7 @@ const App = () => {
   }, [theme]);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className={`container ${theme}`}>
         <Navbar theme={theme} setTheme={setTheme} />
         <Routes>
@@ -29,7 +29,7 @@ const App = () => {
           {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

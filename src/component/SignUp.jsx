@@ -11,7 +11,7 @@ const SignUp = () => {
             <input type="text" name="firstName" required/>
         </label>
         <label>
-            Last Name
+            Last Name 
             <input type="text" name="lastName" required/>
         </label>
         <label>
