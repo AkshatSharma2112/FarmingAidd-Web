@@ -112,3 +112,41 @@
     text-align: center;
   }
 }
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 60px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
+
+  .hero-subtext {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
