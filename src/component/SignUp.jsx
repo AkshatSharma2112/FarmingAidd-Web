@@ -1,37 +1,44 @@
-import React from 'react'
-import './SignUp.css';
+import React, { useState } from "react";
+import "./SignUp.css";
 
 const SignUp = () => {
-  return (
-    <div className="sign-up-section">
-      <h1>Get Registered</h1>
-      <form>
-        <label>
-            First Name
-            <input type="text" name="firstName" required/>
-        </label>
-        <label>
-            Last Name 
-            <input type="text" name="lastName" required/>
-        </label>
-        <label>
-            username
-            <input type="text" />
-        </label>
-        <label>
-            Mob. No.
-            <input type="tel" name="mobile" required/>
-        </label>
-        <lable className ='email'>Email
-            <input type="email" name="email" required/>
-        </lable>
-        <lable>Password
-            <input type="password" name="password" required/>
-            </lable>
-            <button>Register</button>
-      </form>
-    </div>
-  )
-}
+  
 
-export default SignUp
+  return (
+    <div className="signup-container">
+      <h2>Sign up</h2>
+      <form className="signup-form">
+        <div className="input-group">
+          <input type="text" required />
+          <label>Name</label>
+        </div>
+        <div className="input-group">
+          <input type="email" required />
+          <label>Email</label>
+        </div>
+        <div className="input-group">
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <button type="submit" className="signup-btn">
+          Sign Up
+        </button>
+      </form>
+      <p className="login-text">
+        Already have an account? <a href="#">Log In</a>
+      </p>
+      <div className="divider">
+        <span>or</span>
+      </div>
+      <button className="google-btn">
+        <img
+          src="https://developers.google.com/identity/images/g-logo.png"
+          alt="Google"
+        />
+        Sign up with Google
+      </button>
+    </div>
+  );
+};
+
+export default SignUp;

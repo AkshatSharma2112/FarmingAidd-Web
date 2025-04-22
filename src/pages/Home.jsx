@@ -9,7 +9,6 @@ const Home = () => {
     <div>
       <Hero/>
       <Solution/>
-      <SignUP/>
       <Footer/>
     </div>
   )

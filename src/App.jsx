@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import CropInfo from "./component/CropInfo.jsx";
 import Navbar from "./component/Navbar.jsx";
 import Services from "./pages/Services.jsx";
 import Home from "./pages/Home.jsx";
 import Features from "./pages/Features.jsx";
 import About from "./pages/About.jsx";
+import SignUp from "./component/SignUp.jsx";
 
 const App = () => {
   const current_theme = localStorage.getItem("current_theme");
@@ -25,8 +25,8 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/features" element={<Features />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/support" element={<Support />} /> */}
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/signup" element={<SignUp />} /> 
+          {/* <Route path="/login" element={<Login />} />  */}
         </Routes>
       </div>
     </HashRouter>

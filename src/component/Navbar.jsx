@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import logo_light from "/src/assets/logo-black.png";
@@ -7,10 +7,12 @@ import logo_dark from "/src/assets/logo-white.png";
 import logo_dark1 from "/src/assets/logo-white1.png";
 import search_icon_light from "/src/assets/search-w.png";
 import search_icon_dark from "/src/assets/search-b.png";
-import toogle_light from "/src/assets/night.png";
-import toogle_dark from "/src/assets/day.png";
+import toggle_light from "/src/assets/night.png";
+import toggle_dark from "/src/assets/day.png";
 
 const Navbar = ({ theme, setTheme }) => {
+  const [activeTab, setActiveTab] = useState("signup");
+
   const toggle_mode = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
@@ -25,7 +27,7 @@ const Navbar = ({ theme, setTheme }) => {
       <img
         src={theme === "light" ? logo_light : logo_dark}
         alt="Logo"
-        className="logo"
+        className="logo1"
       />
 
       <ul>
@@ -34,6 +36,21 @@ const Navbar = ({ theme, setTheme }) => {
         <li><Link to="/features">Features</Link></li>
         <li><Link to="/about">About</Link></li>
       </ul>
+
+      <div className="tab-container">
+        <button
+          className={`tab-button ${activeTab === 'signup' ? 'active' : ''}`}
+          onClick={() => setActiveTab('signup')}
+        >
+          <Link to="/signup">Sign Up</Link> 
+        </button>
+        <button
+          className={`tab-button ${activeTab === 'login' ? 'active' : ''}`}
+          onClick={() => setActiveTab('login')}
+        >
+          <Link to="/login">Log in</Link>
+        </button>
+      </div>
 
       <div className="searchbox">
         <input type="text" placeholder="Search..." />
@@ -45,7 +62,7 @@ const Navbar = ({ theme, setTheme }) => {
 
       <img
         onClick={toggle_mode}
-        src={theme === "light" ? toogle_light : toogle_dark}
+        src={theme === "light" ? toggle_light : toggle_dark}
         alt="Toggle Theme"
         className="toggleicon"
       />
