@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-between; 
   align-items: center; /* Center items vertically */
-  background: #fff; /* Example background*/
+  background: linear-gradient(to left,  #add8e6, #ffffff, #add8e6);
+
   padding: 15px 20px;
 }
 

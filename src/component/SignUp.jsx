@@ -5,6 +5,7 @@ const SignUp = () => {
   
 
   return (
+    <section className="hero">
     <div className="signup-container">
       <h2>Sign up</h2>
       <form className="signup-form">
@@ -38,6 +39,7 @@ const SignUp = () => {
         Sign up with Google
       </button>
     </div>
+    </section>
   );
 };
 
