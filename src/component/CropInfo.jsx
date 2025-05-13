@@ -103,10 +103,9 @@ function CropInfo() {
   };
 
   return (
-    <div className="main">
+    <section className="cropsec">
       <h1>Crop Water Supply Information</h1>
       <div className="card">
-        <div className="leftcard">
           <form onSubmit={handleSubmit}>
             <label className="name">
               Crop Name :
@@ -140,10 +139,9 @@ function CropInfo() {
               Reset
             </button>
           </form>
-        </div>
-        <div className="rightcard">
+        {/* <div className="rightcard">
           <img src={img1} alt="" />
-        </div>
+        </div> */}
       </div>
 
       {result && (
@@ -170,7 +168,7 @@ function CropInfo() {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }
 
