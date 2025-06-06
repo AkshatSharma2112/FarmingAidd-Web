@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./SignUp.css";
 
 const SignUp = () => {
-  
+
+  const [action, setAction] = useState("Sign Up")
 
   return (
     <section className="hero">
@@ -21,7 +22,11 @@ const SignUp = () => {
           <input type="password" required />
           <label>Password</label>
         </div>
-        <button type="submit" className="signup-btn">
+        <div className="input-group">
+          <input required />
+          <label>Confirm Password</label>
+        </div>
+        <button type="submit" className="signup-btn" onClick={()=>{setAction("Sign Up")}}>
           Sign Up
         </button>
       </form>

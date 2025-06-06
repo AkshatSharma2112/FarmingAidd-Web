@@ -1,27 +1,37 @@
-import React from 'react'
+// Hero.jsx
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleAskQuestion = () => {
+    navigate('/chatbot');
+  };
+
   return (
     <div>
       <section className="hero-section">
-      <div className="hero-content">
-        <img src="" alt="" />
-        <h1 className="hero-title">
-          Empowering Farmers with
-           Smart, Sustainable Solutions
-        </h1>
-        <p className="hero-subtext">
-          Get expert advice, modern techniques, and the latest tools to boost your farm’s productivity.
-        </p>
-        <div className="hero-buttons">
-          <button className="btn primary">Get Started</button>
-          <button className="btn secondary">Ask a Question</button>
+        <div className="hero-content">
+          <img src="" alt="" />
+          <h1 className="hero-title">
+            Empowering Farmers with
+            Smart, Sustainable Solutions
+          </h1>
+          <p className="hero-subtext">
+            Get expert advice, modern techniques, and the latest tools to boost your farm’s productivity.
+          </p>
+          <div className="hero-buttons">
+            <button className="btn primary">Get Started</button>
+            <button className="btn secondary" onClick={handleAskQuestion}>
+              Ask a Question
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

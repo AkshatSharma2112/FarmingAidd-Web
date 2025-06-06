@@ -7,6 +7,8 @@ import Home from "./pages/Home.jsx";
 import Features from "./pages/Features.jsx";
 import About from "./pages/About.jsx";
 import SignUp from "./component/SignUp.jsx";
+import Login from "./component/Login.jsx"
+import Chatbot from "./pages/Chatbot.jsx";
 
 const App = () => {
   const current_theme = localStorage.getItem("current_theme");
@@ -26,7 +28,8 @@ const App = () => {
           <Route path="/features" element={<Features />} />
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<SignUp />} /> 
-          {/* <Route path="/login" element={<Login />} />  */}
+          <Route path="/login" element={<Login />} /> 
+          <Route path="/chatbot" element={<Chatbot />} />
         </Routes>
       </div>
     </HashRouter>
