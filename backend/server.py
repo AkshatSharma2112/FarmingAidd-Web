@@ -40,7 +40,7 @@ def LemNormalize(text):
 
 # Greeting logic
 GREET_INPUTS = ("hello", "hi", "greetings", "sup", "what's up", "hey")
-GREET_RESPONSES = ["hi", "hey", "hello", "I am glad you are talking to me"]
+GREET_RESPONSES = ["hi", "hey", "hello","All good! What about you?", "I am glad you are talking to me"]
 
 def greet(sentence):
     for word in sentence.split():
