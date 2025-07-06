@@ -109,5 +109,5 @@ def chat():
 
 # Start the server
 if __name__ == '__main__':
-    print("🔌 Starting Flask server on http://localhost:5000 ...")
+    print("🔌 Starting Flask server on http://localhost:5173 ...")
     app.run(debug=True, port=5000)
